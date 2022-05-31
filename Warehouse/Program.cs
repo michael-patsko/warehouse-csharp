@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Warehouse
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Item banana = new Item("Banana", 0.2M, "Groceries");
+            Services.ViewItemDetails(banana);
+        }
+    }
+}
